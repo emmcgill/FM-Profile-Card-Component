@@ -1,0 +1,146 @@
+:root {
+    --clr-pri-dark-cyan: hsl(185, 75%, 39%);
+    --clr-pri-desat-blue: hsl(229, 23%, 23%);
+    --clr-pri-gray-blue: hsl(227, 10%, 46%);
+    --clr-neu-dark-gray: hsl(0, 0%, 59%);
+
+    --ff-body: 'Kumbh Sans', sans-serif;
+
+    --fs-body: 18px;
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr-pri-dark-cyan);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-normal);
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.top-img {
+    height: 622px;
+    position: absolute;
+    left: -120%;
+    top: -125%;
+    width: 622px;
+}
+
+.bot-img {
+    height: 622px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    width: 622px;
+}
+
+.user {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50% auto;
+    position: relative;
+    width: 326px;
+    z-index: 1;
+}
+
+.user__bg {
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.user__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 92.5px 0 0 0;
+    z-index: 1;
+}
+
+.user__photo {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 96px;
+    margin-bottom: 24px;
+    width: 96px;
+}
+
+.user__name-age-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+}
+
+.user__name-age-wrapper > * {
+    font-size: var(--ff-body);
+    margin-bottom: 13px;
+}
+
+.user__age {
+    color: var(--clr-pri-gray-blue);
+}
+
+.user__location {
+    color: var(--clr-pri-gray-blue);
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.user__stats {
+    border-top: 1px solid hsla(228, 9%, 92%, 1);
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.stats__total {
+    font-weight: var(--fw-bold);
+    margin-bottom: 9px;
+}
+
+.stats__type {
+    font-size: 10px;
+}
+
+@media(min-width: 1024px) {
+    body {
+        height: 720px;
+        width: 1440px;
+    }
+
+    .user {
+        width: 350px;
+    }
+
+    .top-img {
+        height: 977px;
+        left: -207.5%;
+        top: -98%;
+        width: 977px;
+    }
+    
+    .bot-img {
+        height: 977px;
+        top: 30%;
+        left: 45%;
+        width: 977px;
+    }
+}
+
+
